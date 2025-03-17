@@ -195,12 +195,6 @@ bipolar_ml is ridiculously memory-efficient:
 - ~20-100x speedup on similarity operations
 - Scales to million-word vocabularies on consumer hardware
 
-## 🔧 Installation
-
-```bash
-pip install bipolar_ml
-```
-
 ## 🧪 Run Demos
 
 ```bash
