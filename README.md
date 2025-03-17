@@ -1,6 +1,6 @@
-# 🔍 BitFinder: High-Performance Hyperdimensional Computing Framework
+# 🔍 bipolar_ml: High-Performance Hyperdimensional Computing Framework
 
-BitFinder is a lightning-fast, memory-efficient framework for hyperdimensional computing (HDC) with built-in optimization for binary neural representations. It's designed from the ground up to make bitwise operations sing by leveraging bit-packed storage and vectorized operations.
+bipolar_ml is a framework for hyperdimensional computing (HDC) with built-in optimization for binary neural representations. It's designed from the ground up to make bitwise operations sing by leveraging bit-packed storage and vectorized operations.
 
 ## 🧠 What is Hyperdimensional Computing?
 
@@ -26,7 +26,7 @@ This approach lets you build powerful semantic models and pattern recognizers th
 ### Basic Vector Operations
 
 ```python
-from bitfinder import Bipolar
+from bipolar_ml import Bipolar
 
 # Create random bipolar vectors
 vec1 = Bipolar.random((1024,))
@@ -49,7 +49,7 @@ print(f"Recovery quality: {recovery_quality:.4f}")
 ### Semantic Modeling
 
 ```python
-from bitfinder import AdaptiveBitSemantic, AdaptiveConfig
+from bipolar_ml import AdaptiveBitSemantic, AdaptiveConfig
 
 # Configure the semantic model
 config = AdaptiveConfig(
@@ -79,7 +79,7 @@ for word, distance in results:
 ### Binary Classification
 
 ```python
-from bitfinder import BipolarNetwork, train_bipolar_classifier
+from bipolar_ml import BipolarNetwork, train_bipolar_classifier
 import torch
 
 # Create a binary classifier
@@ -102,7 +102,7 @@ print(f"Accuracy: {accuracy:.4f}")
 ## 🧰 Core Components
 
 ### Bipolar Class
-The heart of BitFinder - an optimized representation for binary vectors. Stores data in bit-packed format (1 bit per value) while exposing a clean API for operations like binding, superposition, and similarity measurement.
+The heart of bipolar_ml - an optimized representation for binary vectors. Stores data in bit-packed format (1 bit per value) while exposing a clean API for operations like binding, superposition, and similarity measurement.
 
 ### AdaptiveBipolar Toolkit
 Analysis and optimization tools that can:
@@ -146,7 +146,7 @@ Transformer architecture that operates entirely in binary space:
 Convert standard neural networks into binary ones with minimal accuracy loss:
 
 ```python
-from bitfinder import ProgressiveHDCDistiller
+from bipolar_ml import ProgressiveHDCDistiller
 
 # Create distiller with existing model
 distiller = ProgressiveHDCDistiller(model, data_loader)
@@ -157,7 +157,7 @@ distiller.transform_next_layer()  # Transform most stable layer
 
 ### Locality-Sensitive Hashing (LSH)
 
-BitFinder implements a specialized binary LSH that makes similarity search blazing fast:
+bipolar_ml implements a specialized binary LSH that makes similarity search blazing fast:
 
 - **Bit-Optimized Hash Tables**: Designed specifically for Hamming distance in binary space
 - **Multi-Table Architecture**: Uses multiple hash tables with different bit sampling patterns
@@ -172,7 +172,7 @@ BitFinder implements a specialized binary LSH that makes similarity search blazi
 results = model.find_similar("quantum", n=10, use_lsh=True)
 
 # Or create and query directly
-from bitfinder import SignLSH
+from bipolar_ml import SignLSH
 lsh = SignLSH(
     dimension=1024,  
     bits_per_table=16,
@@ -189,7 +189,7 @@ similar_ids = lsh.query(query_vector, k=10)
 
 ## 📊 Performance
 
-BitFinder is ridiculously memory-efficient:
+bipolar_ml is ridiculously memory-efficient:
 - 8x memory reduction compared to float32 representations
 - Minimal accuracy tradeoff (typically <2% drop)
 - ~20-100x speedup on similarity operations
@@ -198,21 +198,21 @@ BitFinder is ridiculously memory-efficient:
 ## 🔧 Installation
 
 ```bash
-pip install bitfinder
+pip install bipolar_ml
 ```
 
 ## 🧪 Run Demos
 
 ```bash
 # Run all demos
-python -m bitfinder all
+python -m bipolar_ml all
 
 # Or run specific demos
-python -m bitfinder semantic
-python -m bitfinder vector
-python -m bitfinder transformer
-python -m bitfinder sonar
-python -m bitfinder distiller
+python -m bipolar_ml semantic
+python -m bipolar_ml vector
+python -m bipolar_ml transformer
+python -m bipolar_ml sonar
+python -m bipolar_ml distiller
 ```
 
 ## 📜 License
